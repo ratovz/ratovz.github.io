@@ -53,7 +53,14 @@ table {
     width: 100%;
 
 }
+.banner-column{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
+}
 .topnav{
     display: flex;
     flex-direction: row;
@@ -102,6 +109,14 @@ table {
     text-align: center;
   }
 
+  h3{
+    font-size: 18px;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
   a{
     font-size: 20px;
     font-family: verdana;
@@ -131,13 +146,15 @@ button{
 }
 
   .padding{
-    padding: 20px;
-    margin: 20px;
+
+    margin: 30px;
   }
 
 .slikice-konjev{
-  height: 600px;
+
+  max-height: 600px;
   border-radius: 50px;
+  max-width: auto;
 }
 
 .okvircek-konji{
@@ -170,8 +187,11 @@ button{
   }
 }
 
+
 .okvir-slike{
     display: flex;
+    max-width: 90%;
+    width: 70%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -191,4 +211,12 @@ button{
   top: 3px;
   bottom: 3px;
   width: 2px;
+}
+
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
 }

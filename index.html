@@ -2,14 +2,15 @@
 <head>
     <script src="code.js"></script>
     <title>Kmetija Ratovz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body style="margin:0;">
     <nav class="topnav">
-        <a class="active" href="domov.html" >DOMOV</a>
-        <a href="oskrba.html">OSKRBA KONJ</a>
-        <a href="onas.hmtl">O NAS</a>
-        <a href="kontakt.hmtl">KONTAKT</a>
+        <a class="active" href="index.html" >DOMOV</a>
+        <a href="index.html#oskrba-konj">OSKRBA KONJ</a>
+        <a href="onas.html">O NAS</a>
     </nav>
 
     <div class="banner">
@@ -17,7 +18,7 @@
         <img class="logo fade-in intro" src="logo.png" alt="logo">
     </div>
 
-    <section>
+    <section class="banner">
         <table>
             <tr>
                 <td class="padding">
@@ -25,7 +26,7 @@
                     <img class="fade-in desna" src="konji.jpeg" alt="konj1">
                     
                     
-                <td class="padding ">
+                <td class="padding">
                     <h1>Vzreja borderskih ovčarjev</h1>
                     <img class="fade-in leva" src="psi.jpeg" alt="konj1">
                 </td>
@@ -56,9 +57,9 @@
         </table>
 
     </section>
-    <section>
+    <section class="banner">
         <div class="center">
-            <h1>Konji, ki jih trenutno oskrbujemo:</h1>
+            <h1 id="oskrba-konj">Konji, ki jih trenutno oskrbujemo:</h1>
             <table>
                 <tr class="okvir-slike">
                     <td>
@@ -116,13 +117,16 @@
 
                 </tr>
 
-                
-
 
             </table>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="center">
+            <h2>Kontakt</h1>
+            <h3>Telefon: 041 390 798</h2>
+            <h3>Email: srecko@ratovz.si
 
 </body>
 
