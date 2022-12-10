@@ -2,94 +2,107 @@
 <head>
     <script src="code.js"></script>
     <title>Kmetija Ratovz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body style="margin:0;">
-    <nav class="topnav">
-        <a class="active" href="domov.html" >DOMOV</a>
-        <a href="oskrba.html">OSKRBA KONJ</a>
-        <a href="onas.hmtl">O NAS</a>
-        <a href="kontakt.hmtl">KONTAKT</a>
-    </nav>
+
+    <nav class="navbar">
+        <h1>Ratovz.si</h1>
+        <div>
+          <a href="index.html">Domov</a>
+          <a href="index.html#oskrba-konj">Oskrba konj</a>
+          <a href="onas.html">O nas</a>
+        </div>
+      </nav>
+
+
 
     <div class="banner">
-        <img class="banner" src="banner.jpg" alt="banner">
-        <img class="logo fade-in intro" src="logo.png" alt="logo">
+        
+        <div class="logo-container">
+            <img class="logo-image" src="logo.png" alt="logo">
+        </div>  
     </div>
 
-    <section>
-        <table>
-            <tr>
-                <td class="padding">
-                    <h1>Oskrba upokojenih konj</h1>
-                    <img class="fade-in desna" src="konji.jpeg" alt="konj1">
-                    
-                    
-                <td class="padding ">
-                    <h1>Vzreja borderskih ovčarjev</h1>
-                    <img class="fade-in leva" src="psi.jpeg" alt="konj1">
-                </td>
-            </tr>
 
-            <tr> 
-
-                <td class="okvircek">
-                    <div class="center">
-                        <h2>Border Collie</h2>
-                        <h1>300€</h1>
-                        <button>VSI SO ODDANI</button>
-                    </div>
-                                        
-                </td>
-                <td class="okvircek">
-                    <div class="center">
-                        <h2>Cena oskrbe konja za en mesec</h2>
-                        <h1>125€</h1>
-                        <button>Več informacij</button>
-                    </div>
-
-                </td>
-            </tr>
-        
-        </table>
-
-    </section>
-    <section>
-        <div class="center">
-            <h1>Konji, ki jih trenutno oskrbujemo:</h1>
-            <table>
-                <tr class="center">
-                    <td>
-                        <img class="fade-in slikice-konjev" src="enjya.jpg" alt="konj1">
-                    </td>
-                    <td>
-                        <h1>Enjya</h1>
-                        <h2>Leto prihoda: 2022</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="fade-in" src="konj2.jpeg" alt="konj2">
-                    </td>
-                    <td>
-                        <h2>Ime konja</h2>
-                        <p>Opis konja</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="fade-in" src="konj3.jpeg" alt="konj3">
-                    </td>
-                    <td>
-                        <h2>Ime konja</h2>
-                        <p>Opis konja</p>
-                    </td>
-                </tr>
+    <div class="pricing-table">
+        <!-- Pricing table item 1 -->
+        <div class="pricing-item">
+          <h3 class="pricing-title">Oskrba upokojenih konj</h3>
+          <img src="konji.jpeg" alt="konj" class="pricing-image">
+          <div class="pricing-box">
+            <p class="pricing-description">Cena oskrbe konja za en mesec</p>
+            <p class="pricing-price">125€</p>
             
-            </table>
+          </div>
+          <a href="#" class="pricing-button">Več informacij</a>
         </div>
-    </section>
+    <!-- Pricing table item 2 -->
+        <div class="pricing-item">
+          <h3 class="pricing-title">Vzreja borderskih ovčarjev</h3>
+          <img src="psi.jpeg" alt="Plan 1" class="pricing-image">
+          <div class="pricing-box">
+            <p class="pricing-description">Border Collie</p>
+            <p class="pricing-price">250€</p>
+          </div>
+          <a href="#" class="pricing-button">VSI SO ODDANI</a>
+        </div>
+    </div>
 
+    <div class="divider">
+        <p class="divider-content">Divider</p>
+      </div>
 
+      <h1 id="oskrba-konj">Konji, ki jih trenutno oskrbujemo:</h1>
+
+    <div class="gallery">
+
+        
+
+        <!-- Gallery item 1 -->
+        <div class="gallery-item">
+          <img src="enjya.jpg" alt="Image 1" class="gallery-image">
+          <h3 class="gallery-title">Enjya</h3>
+          <p class="gallery-description">Leto prihoda: 2022</p>
+        </div>
+    
+        <!-- Gallery item 2 -->
+        <div class="gallery-item">
+          <img src="tisa.jpg" alt="Image 2" class="gallery-image">
+          <h3 class="gallery-title">Furesta</h3>
+          <p class="gallery-description">Leto prihoda: 2021</p>
+        </div>
+    
+        <!-- Gallery item 3 -->
+        <div class="gallery-item">
+          <img src="valter.jpg" alt="Image 3" class="gallery-image">
+          <h3 class="gallery-title">Valter</h3>
+          <p class="gallery-description">Leto prihoda: 2020</p>
+        </div>
+
+        <!-- Gallery item 4 -->
+        <div class="gallery-item">
+            <img src="tisa.jpg" alt="Image 3" class="gallery-image">
+            <h3 class="gallery-title">Tisa</h3>
+            <p class="gallery-description">Leto prihoda: 2019</p>
+          </div>
+
+            <!-- Gallery item 5 -->
+        <div class="gallery-item">
+            <img src="asteriks.jpg" alt="Image 3" class="gallery-image">
+            <h3 class="gallery-title">Asteriks</h3>
+            <p class="gallery-description">Leto prihoda: 2018</p>
+        </div>
+    </div>
+
+<footer>
+          <div class="footer">
+            <h2 class="gallery-title" >Kontakt:</h2>
+            <a class="gallery-description" href="tel: 031 413 826">mobitel: 031 413 826</a>
+            <a class="gallery-description" href="mailto:srecko@ratovz.si">email: srecko@ratovz.si</a>
+          </div>
+    </footer>
 </body>
 
