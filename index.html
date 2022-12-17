@@ -7,126 +7,101 @@
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body style="margin:0;">
-    <nav class="topnav">
-        <a class="active" href="index.html" >DOMOV</a>
-        <a href="index.html#oskrba-konj">OSKRBA KONJ</a>
-        <a href="onas.html">O NAS</a>
-    </nav>
+
+    <nav class="navbar">
+        <h1>Ratovz.si</h1>
+        <div>
+          <a href="index.html">Domov</a>
+          <a onclick="scrollToGallery()">Oskrba konj</a>
+          <a href="onas.html">O nas</a>
+        </div>
+      </nav>
+
 
     <div class="banner">
-        <img class="banner" src="banner.jpg" alt="banner">
-        <img class="logo fade-in intro" src="logo.png" alt="logo">
+        
+        <div class="logo-container">
+            <img class="logo-image" src="logo.png" alt="logo">
+        </div>  
     </div>
 
-    <section class="banner">
-        <table>
-            <tr>
-                <td class="padding">
-                    <h1>Oskrba upokojenih konj</h1>
-                    <img class="fade-in desna" src="konji.jpeg" alt="konj1">
-                    
-                    
-                <td class="padding">
-                    <h1>Vzreja borderskih ovčarjev</h1>
-                    <img class="fade-in leva" src="psi.jpeg" alt="konj1">
-                </td>
-            </tr>
 
-            <tr> 
-
-                <td class="okvircek">
-                    
-                    <div class="center">
-                        <h2>Cena oskrbe konja za en mesec</h2>
-                        <h1>125€</h1>
-                        <button>Več informacij</button>
-                    </div>
-                                        
-                </td>
-                <td class="okvircek">
-                    <div class="center">
-                        <h2>Border Collie</h2>
-                        <h1>250€</h1>
-                        <button>VSI SO ODDANI</button>
-                    </div>
-                    
-
-                </td>
-            </tr>
-        
-        </table>
-
-    </section>
-    <section class="banner">
-        <div class="center">
-            <h1 id="oskrba-konj">Konji, ki jih trenutno oskrbujemo:</h1>
-            <table>
-                <tr class="okvir-slike">
-                    <td>
-                        <img class="fade-in slikice-konjev padding" src="enjya.jpg" alt="konj1">
-                    </td>
-                    <td class="celica-slike padding">
-                        <h1>Enjya</h1>
-                        <h2>Leto prihoda: 2022</h2>
-                    </td>
-
-                </tr>
-
-
-                <tr class="okvir-slike">
-                    <td>
-                        <img class="fade-in slikice-konjev padding" src="furesta.jpg" alt="konj1">
-                    </td>
-                    <td class="celica-slike padding">
-                        <h1>Furesta</h1>
-                        <h2>Leto prihoda: 2021</h2>
-                    </td>
-
-                </tr>
-
-                <tr class="okvir-slike">
-                    <td>
-                        <img class="fade-in slikice-konjev padding" src="valter.jpg" alt="konj1">
-                    </td>
-                    <td class="celica-slike padding">
-                        <h1>Valter</h1>
-                        <h2>Leto prihoda: 2020</h2>
-                    </td>
-
-                </tr>
-
-                <tr class="okvir-slike">
-                    <td>
-                        <img class="fade-in slikice-konjev padding" src="tisa.jpg" alt="konj1">
-                    </td>
-                    <td class="celica-slike padding">
-                        <h1>Tisa</h1>
-                        <h2>Leto prihoda: 2019</h2>
-                    </td>
-
-                </tr>
-
-                <tr class="okvir-slike">
-                    <td>
-                        <img class="fade-in slikice-konjev padding" src="asteriks.jpg" alt="konj1">
-                    </td>
-                    <td class="celica-slike padding">
-                        <h1>Asteriks</h1>
-                        <h2>Leto prihoda: 2018</h2>
-                    </td>
-
-                </tr>
-
-
-            </table>
+    <div class="pricing-table">
+        <!-- Pricing table item 1 -->
+        <div class="pricing-item">
+          <h3 class="pricing-title">Oskrba upokojenih konj</h3>
+          <img src="konji.jpeg" alt="konj" class="pricing-image">
+          <div class="pricing-box">
+            <p class="pricing-description">Cena oskrbe konja za en mesec</p>
+            <p class="pricing-price">125€</p>
+            
+          </div>
+          <a href="#" class="pricing-button">Več informacij</a>
         </div>
-    </section>
+    <!-- Pricing table item 2 -->
+        <div class="pricing-item">
+          <h3 class="pricing-title">Vzreja borderskih ovčarjev</h3>
+          <img src="psi.jpeg" alt="Plan 1" class="pricing-image">
+          <div class="pricing-box">
+            <p class="pricing-description">Border Collie</p>
+            <p class="pricing-price">250€</p>
+          </div>
+          <a href="#" class="pricing-button">VSI SO ODDANI</a>
+        </div>
+    </div>
 
-    <footer>
-        <div class="center">
-            <h2>Kontakt</h1>
-            <h3>Telefon: 041 390 798</h2>
-            <h3>Email: srecko@ratovz.si
+    <div class="divider">
+        <p class="divider-content">Divider</p>
+      </div>
 
+      <h1 id="gallery">Konji, ki jih trenutno oskrbujemo:</h1>
+
+    <div class="gallery">
+
+        
+
+        <!-- Gallery item 1 -->
+        <div class="gallery-item">
+          <img src="enjya.jpg" alt="Image 1" class="gallery-image">
+          <h3 class="gallery-title">Enjya</h3>
+          <p class="gallery-description">Leto prihoda: 2022</p>
+        </div>
+    
+        <!-- Gallery item 2 -->
+        <div class="gallery-item">
+          <img src="tisa.jpg" alt="Image 2" class="gallery-image">
+          <h3 class="gallery-title">Furesta</h3>
+          <p class="gallery-description">Leto prihoda: 2021</p>
+        </div>
+    
+        <!-- Gallery item 3 -->
+        <div class="gallery-item">
+          <img src="valter.jpg" alt="Image 3" class="gallery-image">
+          <h3 class="gallery-title">Valter</h3>
+          <p class="gallery-description">Leto prihoda: 2020</p>
+        </div>
+
+        <!-- Gallery item 4 -->
+        <div class="gallery-item">
+            <img src="tisa.jpg" alt="Image 3" class="gallery-image">
+            <h3 class="gallery-title">Tisa</h3>
+            <p class="gallery-description">Leto prihoda: 2019</p>
+          </div>
+
+            <!-- Gallery item 5 -->
+        <div class="gallery-item">
+            <img src="asteriks.jpg" alt="Image 3" class="gallery-image">
+            <h3 class="gallery-title">Asteriks</h3>
+            <p class="gallery-description">Leto prihoda: 2018</p>
+        </div>
+    </div>
+
+<footer>
+          <div class="footer">
+            <h2 class="gallery-title" >Kontakt:</h2>
+            <a class="gallery-description" href="tel: 031 413 826">mobitel: 031 413 826</a>
+            <a class="gallery-description" href="mailto:srecko@ratovz.si">email: srecko@ratovz.si</a>
+          </div>
+    </footer>
 </body>
 
